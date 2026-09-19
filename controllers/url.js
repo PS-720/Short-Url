@@ -11,7 +11,7 @@ export const handleGenerateShortUrl = async (req, res) => {
 		visitHistory: [],
 	});
 
-	return res.json({ id: shortID });
+	return res.redirect("/");
 };
 
 export const handleRedirectUrl = async (req, res) => {
